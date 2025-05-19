@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
 
   try {
     const response = await openai.chat.completions.create({
-      model: 'mistralai/mistral-7b-instruct', // або 'meta-llama/llama-3-8b-instruct'
+      model: 'mistralai/mistral-7b-instruct',
       messages: [
         { role: 'system', content: systemMessage },
         { role: 'user', content: prompt },
